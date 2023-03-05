@@ -341,12 +341,12 @@ void main()
 
 We are basically just saying that there is going to be a new input variable (the color array) and this color information should be passed to the fragment shader as `vColor`. Then the fragment receives the vertex color and sets it for that vertex.
 
-**Note**: The name of the variable you pass to the fragment shader should be the same name of the variable received by the fragment shader. So if you call the vertex color variable `vColor`, the input variable in the fragment shader should also be called `vColor`.
+:warning: **Note**: The name of the variable you pass to the fragment shader should be the same name of the variable received by the fragment shader. So if you call the vertex color variable `vColor`, the input variable in the fragment shader should also be called `vColor`.
 
 There you have it! A tricolor triangle 🌈
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/79821802/222973769-a007f978-98c6-4ec1-846c-86a6c2fb18e7.png" width=200/><br>
+    <img src="https://user-images.githubusercontent.com/79821802/222973769-a007f978-98c6-4ec1-846c-86a6c2fb18e7.png" width=300/><br>
     <span>
         <sup><sub>
             <b>Figure 5</b>: The rendered triangle with a different color at each vertex.
