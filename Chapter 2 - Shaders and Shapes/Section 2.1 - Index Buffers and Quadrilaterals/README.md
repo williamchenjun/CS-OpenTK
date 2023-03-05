@@ -49,7 +49,7 @@ float[] vertices = new float[]
 };
 ```
 
-I changed the `x` coordinate as well so we have a rectangle instead of a square.
+I changed the `x` coordinate as well so we have a rectangle instead of a square. You may want to add a new color to the `colors` array as well, but it may be ok not to as well.
 
 Afterwards, we define the buffer under all the other of our buffers (but **before you define the VAO**)
 
