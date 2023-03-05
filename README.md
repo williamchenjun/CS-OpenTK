@@ -8,4 +8,5 @@ I will be documenting my learning, and I will try to convey my knowledge into si
 
 ## Links
 - [Chapter 1 - Creating a Window](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%201%20-%20Creating%20a%20Window)
+- [Chapter 2 - Shaders and Shapes](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%202%20-%20Shaders%20and%20Shapes)
 
