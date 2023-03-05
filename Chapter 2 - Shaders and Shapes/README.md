@@ -41,19 +41,7 @@ Together with the vertex shader, we usually have a fragment shader. After the ra
 </span>
 </div><br>
 
-In OpenTK, vertex and fragment shaders are written in GLSL, which stands for OpenGL Shading Language. Let us start, writing a shader class:
-
-```CS
-namespace <ProjectFolder>
-{
-    public class Shader
-    {
-        
-    }
-}
-```
-
-As mentioned above, we will have to write our vertex and fragment shader files separately. They will have the extension `.vert` and `.frag` and will be written in GLSL. These files are going to be imported into our shader class and compiled at runtime. Thus, we write code to do just that:
+In OpenTK, vertex and fragment shaders are written in GLSL, which stands for OpenGL Shading Language. As mentioned above, we will have to write our vertex and fragment shader codes separately. You can either write them in your main file, or in separate files and import them as string. I will share the full shader code and then comment on it below:
 
 ```CS
 
