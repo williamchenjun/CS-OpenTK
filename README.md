@@ -140,6 +140,9 @@ Now if we run this code, a window with a blue background will pop up:
 
 and we are done with the simple part! Next up, drawing a triangle (a.k.a. the "Hello World" of graphics programming).
 
+### References
+- [Two-Bit Coding](https://www.youtube.com/@two-bitcoding8018)
+
 [^1]: Not sure what it means yet.
 [^2]: Check out a more detailed response on [StackOverflow](https://stackoverflow.com/a/23552542/18637675).
 [^3]: More details on the methods of `GameWindow` in the [documentation](https://opentk.net/api/OpenTK.Windowing.Desktop.GameWindow.html#methods).
