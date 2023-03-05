@@ -274,6 +274,85 @@ and that's it! Now if you compile the file, you should see a yellow triangle on 
 
 That is all I have learnt for now about shaders. This is barely touching the surface and it's already pretty incomprehensible. I hope I can learn more about it and maybe with practice, it will become clearer over time.
 
+### Additional Content: Coloring the vertices
+
+If you want to recreate the classic RGB triangle, you just need to append another buffer to the vertex array, and you need to add another input to the `shader.vert` file. So right after defining our `vertices` array, define a new `colors` array
+
+```CS
+float[] colors = new float[]
+{
+    1.0f, 0.0f, 0.0f, 1.0f,
+    0.0f, 1.0f, 0.0f, 1.0f,
+    0.0f, 0.0f, 1.0f, 1.0f
+};
+```
+
+This will be red, green and blue. You could also use a `Vector3` just for RGB instead of RGBA. Now define a new buffer for the color (which, as a reminder, it is just a structure which will carry the data to the GPU). Right under where we defined the `vertexBufferHandle`, we create the color buffer
+
+```CS
+this.colorBufferHandle = GL.GenBuffer();
+GL.BindBuffer(BufferTarget.ArrayBuffer, this.colorBufferHandle);
+GL.BufferData(BufferTarget.ArrayBuffer, colors.Length * sizeof(float), colors, BufferUsageHint.StaticDraw);
+GL.BindBuffer(BufferTarget.ArrayBuffer, 0);
+```
+where `colorBufferHandle` should be defined globally in the class. Then, you need to add a reference to the color buffer to the vertex array object (VAO). So, right under where you defined the `VertexAttribPointer` for the vertex buffer, we do the same for the color buffer
+
+```CS
+GL.BindBuffer(BufferTarget.ArrayBuffer, this.colorBufferHandle);
+GL.VertexAttribPointer(1, 4, VertexAttribPointerType.Float, false, 4 * sizeof(float), 0);
+GL.EnableVertexAttribArray(1);
+```
+Notice that the index now is **1** and not 0. That is because in the `shader.vert` file we are going to set the location to 1 for the input color. Moreover, the size of a single color is 4 floats, and the stride is now `4 * sizeof(float)` (that is 16 bytes). We enable the vertex attribute array for index 1. Finally, the last thing to do in the `Game` file is to delete the color buffer `OnUnload`. So right below where you delete the vertex buffer, add 
+
+```CS
+GL.DeleteBuffer(this.colorBufferHandle);
+```
+
+Now go to the `shader.vert` file and add the following lines
+
+```GLSL
+#version 330 core
+
+layout(location = 0) in vec3 aPosition;
+layout(location = 1) in vec4 aColor;
+
+out vec4 vColor;
+
+void main(void){
+    vColor = aColor;
+    gl_Position = vec4(aPosition, 1.0);
+}
+```
+
+and in the `shader.frag` file add
+
+```GLSL
+#version 330
+
+in vec4 vColor;
+out vec4 outputColor;
+
+void main()
+{
+    outputColor = vColor;
+}
+```
+
+We are basically just saying that there is going to be a new input variable (the color array) and this color information should be passed to the fragment shader as `vColor`. Then the fragment receives the vertex color and sets it for that vertex.
+
+**Note**: The name of the variable you pass to the fragment shader should be the same name of the variable received by the fragment shader. So if you call the vertex color variable `vColor`, the input variable in the fragment shader should also be called `vColor`.
+
+There you have it! A tricolor triangle 🌈
+
+<div align="center">
+    <img src="https://user-images.githubusercontent.com/79821802/222973769-a007f978-98c6-4ec1-846c-86a6c2fb18e7.png" width=200/><br>
+    <span>
+        <sup><sub>
+            <b>Figure 5</b>: The rendered triangle with a different color at each vertex.
+        </sub></sup>
+    </span>
+</div>
+
 ### References
 
 - [Shader Basics, Blending & Textures • Shaders for Game Devs](https://www.youtube.com/watch?v=kfM-yu0iQBk)
