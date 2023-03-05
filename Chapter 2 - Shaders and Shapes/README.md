@@ -347,6 +347,8 @@ We are basically just saying that there is going to be a new input variable (the
 
 :warning: **Note**: The name of the variable you pass to the fragment shader should be the same name of the variable received by the fragment shader. So if you call the vertex color variable `vColor`, the input variable in the fragment shader should also be called `vColor`.
 
+:exclamation: **Warning**: In GLSL `1f` is not a valid input. You can either write `1.0` or `1.0f`. Writing `1f` will throw an error (which you can log using `GL.GetShaderInfoLog` after compiling the shaders).
+
 There you have it! A tricolor triangle 🌈
 
 <div align="center">
