@@ -5,7 +5,7 @@
 
 So, we have successfully created a triangle. We only used a vertex buffer, and if you followed the additional step, we also used a color buffer. One thing you might already know is that every rendered surface 2D or 3D on the screen is made out of meshes. A mesh is a set of nodes (vertices) and edges (lines). In Mathematics it's called a fully connected and complete graph. Albeit undirected, that is, the edges don't carry additional information such as a direction. The most minimal polygon that we can create with a set of nodes and edges is a triangle. That is why most of the meshes are made out of triangles. It makes our surfaces more flexible to work with and if you partition a surface enough you can get a very smooth surface topology. There is a whole branch of partial differential equations that deals with numerical approaches to solving them, and those methods include also using triangular meshes[^1].
 
-Anyways, enough talk about meshes and maths. What I am getting at is that in OpenGL everything is made out of a triangular mesh. That means that if we want to define a polygon with more than 3 sides, it's going to be composed on 2, 3, ..., $N$ triangles.
+Anyways, enough talk about meshes and maths. What I am getting at is that in OpenGL everything is made out of a triangular mesh. That means that if we want to define a polygon with more than 3 sides, it's going to be made of 2, 3, ..., $N$ triangles.
 
 **Example**:
 
