@@ -215,7 +215,7 @@ Create a folder in your parent project folder called `Shader`. In it, create two
 
 In `shader.vert` write:
 
-```
+```GLSL
 #version 330 core
 
 layout(location = 0) in vec3 aPosition;
@@ -232,7 +232,7 @@ The first line is mandatory and it indicates which version of the engine to use.
 The `in` keyword means "input" and `vec3` means a 3D vector. So the input data we expect is a 3D array. The GLSL must have a main function which specifies the position of the vertices in `gl_Position` as a 4D array.
 
 In `shader.frag` write:
-```
+```GLSL
 #version 330
 
 out vec4 outputColor;
