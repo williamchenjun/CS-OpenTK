@@ -13,7 +13,7 @@ Anyways, enough talk about meshes and maths. What I am getting at is that in Ope
 <img src="https://user-images.githubusercontent.com/79821802/222978762-8f4c89ef-053b-45d7-aaf3-c34e6f4eb921.png" width=300/><br>
 <span>
 <sup><sub>
-<b>Figure 1</b>: Polygons made up non-overlapping triangles.
+<b>Figure 1</b>: Polygons made up of non-overlapping triangles.
 </sub></sup>
 </span>
 </div><br>
