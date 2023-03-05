@@ -1,4 +1,4 @@
-## OpenTK - Shaders
+## Shaders
 
 Shaders must be one of the most confusing topics for me, especially because I am not familiar with Unity, Blender, or any other game engine, and I have absolutely no experience in graphics or game development. The following highlights the main things that I understood about shaders.
 
