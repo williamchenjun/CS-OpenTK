@@ -281,4 +281,4 @@ That is all I have learnt for now about shaders. This is barely touching the sur
 - [Two-Bit Coding](https://www.youtube.com/@two-bitcoding8018)
 
 [^1]: Read more about about types of shader data [here](https://github.com/opentk/LearnOpenTK/blob/master/Chapter1/2-HelloTriangle/Shaders/shader.vert)
-[^2]: You can read more [here](https://learnopengl.com/Getting-started/Coordinate-Systems#:~:text=OpenGL%20expects%20all%20the%20vertices,range%20will%20not%20be%20visible.) about NBC. But basically coordinates are normalised, that is, the range of x, y, z axes are in the range (-1,1) where (0,0) is the center of the screen.
+[^2]: You can read more [here](https://learnopengl.com/Getting-started/Coordinate-Systems#:~:text=OpenGL%20expects%20all%20the%20vertices,range%20will%20not%20be%20visible.) about NBC. But basically coordinates are normalised, that is, the range of x, y, z axes are (-1,1) where (0,0) is the center of the screen.
