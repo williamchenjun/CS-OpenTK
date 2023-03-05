@@ -37,7 +37,21 @@ uint[] indices = new uint[]
     2, 1, 3
 };
 ```
-(I will be going clockwise). Afterwards, we define the buffer under all the other of our buffers (but before you define the VAO)
+(I will be going clockwise), and make sure that you add another vertex to the `vertices` array
+
+```CS
+float[] vertices = new float[]
+{
+    -0.7f, -0.5f, 0.0f,  // bottom left
+    -0.7f,  0.5f, 0.0f,  // top left
+     0.7f, -0.5f, 0.0f,  // bottom right
+     0.7f,  0.5f, 0.0f   // top right
+};
+```
+
+I changed the `x` coordinate as well so we have a rectangle instead of a square.
+
+Afterwards, we define the buffer under all the other of our buffers (but before you define the VAO)
 
 ```CS
 this.indexBufferHandle = GL.GenBuffer();
