@@ -130,7 +130,7 @@ In simple terms:
   - `GL.ClearColor` is a method that sets the color of the color buffer [^4]. In this case, this function sets the background color.
   - `GL.Clear` is the method that applies the color we specified.
 - `this.Context.SwapBuffers` is a method that swaps front and back buffers, which shows the rendered scene to the user.
-- `this.CenterWindow` is pretty self-explanatory, and it has one overload which lets you define the size of the window as a 2D vector of integers, which in this case we can define as a `Vector2i` (from the `OpenTk.Mathematics` namespace) where the "i" stands for "integer".
+- `this.CenterWindow` is pretty self-explanatory, and it has one overload which lets you define the size of the window as a 2D vector of integers, which in this case we can define as a `Vector2i` (from the `OpenTK.Mathematics` namespace) where the "i" stands for "integer".
 
 Now if we run this code, a window with a blue background will pop up:
 
