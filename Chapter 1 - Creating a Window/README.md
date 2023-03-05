@@ -1,5 +1,7 @@
 ## Creating a Window
 
+[:point_right: Go to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%202%20-%20Shaders%20and%20Shapes)
+
 First of all, I will assume that you have Visual Studio/Visual Studio Code or any C# IDE installed. I will also assume that you know in general how to set up a project file. For this we will be creating a C# console project: You can either create one in Visual Studio simply, or use the terminal/shell and run the following:
 
 (Skip if you already created your project folder)
@@ -131,6 +133,9 @@ Now if we run this code, a window with a blue background will pop up:
 </div>
 
 and we are done with the simple part! Next up, drawing a triangle (a.k.a. the "Hello World" of graphics programming).
+
+[:point_right: Go to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%202%20-%20Shaders%20and%20Shapes)<br>
+[:point_left: Go to home](https://github.com/williamchenjun/CS-OpenTK)
 
 ### References
 - [Two-Bit Coding](https://www.youtube.com/@two-bitcoding8018)
