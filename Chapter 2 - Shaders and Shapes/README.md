@@ -1,5 +1,7 @@
 ## Shaders
 
+[Jump to section 2.1](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals/README.md)
+
 Shaders must be one of the most confusing topics for me, especially because I am not familiar with Unity, Blender, or any other game engine, and I have absolutely no experience in graphics or game development. The following highlights the main things that I understood about shaders.
 
 In simple terms, a shader is code that runs through your GPU which instructs it to render certain pixels a certain way. So shaders contain the math necessary to color or move objects the way they do, otherwise, we wouldn't see anything. This is why it is crucial to get a good grasp about shaders before jumping into graphics programming. There are various shaders which are used depending on the desired output, style, behaviour. However, it doesn't necessarily have to be complex if you don't want to. For example, vertex shaders are used to render vertices into pixels onto your screen.
@@ -353,6 +355,8 @@ There you have it! A tricolor triangle 🌈
         </sub></sup>
     </span>
 </div>
+
+[Next - Section 2.1 :point_right:](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals/README.md)
 
 ### References
 
