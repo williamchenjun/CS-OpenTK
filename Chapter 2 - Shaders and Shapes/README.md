@@ -225,7 +225,11 @@ void main(void){
 }
 ```
 
-The first line is mandatory and it indicates which version of the engine to use. The `layout(location=0)` is the index value we defined as out first argument for the `VertexAttribPointer`. The `in` keyword means "input" and `vec3` means a 3D vector. So the input data we expect is a 3D array. The GLSL must have a main function which specifies the position of the vertices in `gl_Position` as a 4D array.
+The first line is mandatory and it indicates which version of the engine to use. The `layout(location=0)` is the index value we defined as our first argument for the `VertexAttribPointer`:
+
+> The first argument represents the index of the input data in the shader [...]
+
+The `in` keyword means "input" and `vec3` means a 3D vector. So the input data we expect is a 3D array. The GLSL must have a main function which specifies the position of the vertices in `gl_Position` as a 4D array.
 
 In `shader.frag` write:
 ```
