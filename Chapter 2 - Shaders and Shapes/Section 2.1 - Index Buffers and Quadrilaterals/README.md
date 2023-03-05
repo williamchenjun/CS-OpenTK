@@ -89,5 +89,7 @@ That's it! If you compile the code, you should be able to see a rectangle
 </span>
 </div>
 
+### References
+- [OpenTK](https://opentk.net/learn/chapter1/3-element-buffer-objects.html)
 
 [^1]: You can look into the [Finite Element Method](https://en.wikipedia.org/wiki/Finite_element_method) (FEM) for more information. There are more ways than one to solve PDEs numerically of course.
