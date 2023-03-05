@@ -7,5 +7,5 @@ I have long wondered how to make my own graphics without having to use Unity or 
 I will be documenting my learning, and I will try to convey my knowledge into simpler terms. It will be a bit reductive to talk about certain things regarding graphics in simple terms, and it might even upset some people because of the imprecisions. But hey, this is meant to be a beginner-friendly tutorial and it's also supposed to be comprehensible. I've always said that people have a tendency to teach things wrong. There needs to be a balance between making sure a student doesn't get the wrong ideas and limit themselves to beginner level content, and making sure they also aren't overwhelmed by everything that is possible. Anyways, I'd say we can start with the first things!
 
 ## Links
-
+- [Chapter 1 - Creating a Window](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%201%20-%20Creating%20a%20Window)
 
