@@ -1,6 +1,8 @@
 ## Shaders
 
-[:point_right: Jump to section 2.1](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals/README.md)
+[:point_right: Jump to section 2.1](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals/README.md)<br>
+[:point_left: Go back to Chapter 1]()<br>
+[:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
 
 Shaders must be one of the most confusing topics for me, especially because I am not familiar with Unity, Blender, or any other game engine, and I have absolutely no experience in graphics or game development. The following highlights the main things that I understood about shaders.
 
@@ -356,7 +358,9 @@ There you have it! A tricolor triangle 🌈
     </span>
 </div>
 
-[Next - Section 2.1 :point_right:](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals/README.md)
+[Next - Section 2.1 :point_right:](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals/README.md)<br>
+[:point_left: Go back to Chapter 1]()<br>
+[:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
 
 ### References
 
