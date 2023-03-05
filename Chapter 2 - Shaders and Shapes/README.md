@@ -151,8 +151,9 @@ namespace Test
             // Everything written after this will be stored in the vertex array.
             this.vertexArrayHandle = GL.GenVertexArray();
             GL.BindVertexArray(this.vertexArrayHandle);
+            
             // Defines the vertex attributes.
-            GL.BindBuffer(BufferTarget.ArrayBuffer, this.vertexArrayHandle);
+            GL.BindBuffer(BufferTarget.ArrayBuffer, this.vertexBufferHandle);
             GL.VertexAttribPointer(0, 3, VertexAttribPointerType.Float, false, 3 * sizeof(float), 0);
             GL.EnableVertexAttribArray(0);
 
