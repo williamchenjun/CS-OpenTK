@@ -51,7 +51,7 @@ float[] vertices = new float[]
 
 I changed the `x` coordinate as well so we have a rectangle instead of a square.
 
-Afterwards, we define the buffer under all the other of our buffers (but before you define the VAO)
+Afterwards, we define the buffer under all the other of our buffers (but **before you define the VAO**)
 
 ```CS
 this.indexBufferHandle = GL.GenBuffer();
@@ -60,7 +60,7 @@ GL.BufferData(BufferTarget.ElementArrayBuffer, indices.Length * sizeof(uint), in
 GL.BindBuffer(BufferTarget.ElementArrayBuffer, 0);
 ```
 
-This time around our buffer target is the element array buffer. But for the rest it's just the same. Write this under all the other buffers, before you define the VAO. Then, after defining the VAO, bind this buffer to it
+This time around our buffer target is the element array buffer. But for the rest it's just the same. Then, **after defining the VAO**, bind this buffer to it
 
 ```CS
 GL.BindBuffer(BufferTarget.ElementArrayBuffer, this.indexBufferHandle);
