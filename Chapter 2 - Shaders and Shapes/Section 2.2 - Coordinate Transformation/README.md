@@ -5,8 +5,9 @@ As mentioned before, the coordinate system that OpenGL uses is called the normal
 There isn't a lot of programming involved to do this. Instead of writing a function to convert float to NDC, we directly write the conversion formula in the vertex shader code. First of all, let's take a look at what we mean by this conversion
 
 <div align="center">
-<img width="500" alt="ndc" src="https://user-images.githubusercontent.com/79821802/222994940-1536fccd-45ed-4846-957a-5d4507e23488.png"><br>
+<img width="500" alt="ndc" src="https://user-images.githubusercontent.com/79821802/222996402-1c75c383-e1c9-490c-8809-341f3f1ae879.png"><br>
 <span>
+
   <sup><sub>
     <b>Figure 1</b>: Indicative representation of the coordinate transformation.
   </sub></sup>
