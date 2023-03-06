@@ -1,5 +1,6 @@
 ## Index Buffers
 
+[:point_right: Jumo to Section 2.2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.2%20-%20Coordinate%20Transformation/README.md)
 [:point_left: Go back to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/README.md)<br>
 [:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
 
@@ -92,6 +93,7 @@ That's it! If you compile the code, you should be able to see a rectangle
 </span>
 </div>
 
+[:point_right: Jumo to Section 2.2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.2%20-%20Coordinate%20Transformation/README.md)
 [:point_left: Go back to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/README.md)<br>
 [:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
 
