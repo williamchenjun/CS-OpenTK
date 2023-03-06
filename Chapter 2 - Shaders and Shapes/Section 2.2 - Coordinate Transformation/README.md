@@ -1,0 +1,14 @@
+## Convert normal coordinates to NDC
+
+As mentioned before, the coordinate system that OpenGL uses is called the normalized device coordinate system. It range fom -1 to 1 in every direction. So it's basically a percentage of how left right up down you want your object to be. However, that can be incovenient when programming because it doesn't really mean much. Where as being able to define how many "pixels"/fragments wide a shape is might be better.
+
+There isn't a lot of programming involved to do this. Instead of writing a function to convert float to NDC, we directly write the conversion formula in the vertex shader code. First of all, let's take a look at what we mean by this conversion
+
+<div align="center">
+<img width="500" alt="ndc" src="https://user-images.githubusercontent.com/79821802/222994940-1536fccd-45ed-4846-957a-5d4507e23488.png"><br>
+<span>
+  <sup><sub>
+    <b>Figure 1</b>: Indicative representation of the coordinate transformation.
+  </sub></sup>
+</span>
+</div>
