@@ -370,6 +370,7 @@ There you have it! A tricolor triangle 🌈
 - [Shader Basics, Blending & Textures • Shaders for Game Devs](https://www.youtube.com/watch?v=kfM-yu0iQBk)
 - [LearnOpenTK](https://github.com/opentk/LearnOpenTK/blob/master/Common/Shader.cs)
 - [Two-Bit Coding](https://www.youtube.com/@two-bitcoding8018)
+- [Freya Holmér](https://www.youtube.com/@Acegikmo)
 
 [^1]: Read more about about types of shader data [here](https://github.com/opentk/LearnOpenTK/blob/master/Chapter1/2-HelloTriangle/Shaders/shader.vert)
 [^2]: You can read more [here](https://learnopengl.com/Getting-started/Coordinate-Systems#:~:text=OpenGL%20expects%20all%20the%20vertices,range%20will%20not%20be%20visible.) about NBC. But basically coordinates are normalised, that is, the range of x, y, z axes are (-1,1) where (0,0) is the center of the screen.
