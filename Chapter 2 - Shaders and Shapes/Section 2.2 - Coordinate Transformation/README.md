@@ -1,5 +1,8 @@
 ## Convert normal coordinates to NDC
 
+[:point_left: Go back to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/README.md)<br>
+[:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
+
 As mentioned before, the coordinate system that OpenGL uses is called the normalized device coordinate system. It ranges fom -1 to 1 in every direction. So it's basically a percentage of how left right up down you want your object to be. However, that can be incovenient when programming because it doesn't really mean much. Whereas, being able to define how many "pixels"/fragments wide a shape is might be better.
 
 There isn't a lot of programming involved to do this. Instead of writing a function to convert float to NDC, we directly write the conversion formula in the vertex shader code. First of all, let's take a look at what we mean by this conversion
@@ -135,7 +138,8 @@ You can use [this desmos graph](https://www.desmos.com/calculator/rgbom4dfqw) I 
 </span>
 </div><br>
 
-
+[:point_left: Go back to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/README.md)<br>
+[:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
 
 ### Reference
 - [Two-bit Coding](https://www.youtube.com/@two-bitcoding8018)
