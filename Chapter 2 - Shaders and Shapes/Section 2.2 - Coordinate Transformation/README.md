@@ -1,6 +1,6 @@
 ## Convert normal coordinates to NDC
 
-[:point_left: Go back to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/README.md)<br>
+[:point_left: Go back to Section 2.1](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals)<br>
 [:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
 
 As mentioned before, the coordinate system that OpenGL uses is called the normalized device coordinate system. It ranges fom -1 to 1 in every direction. So it's basically a percentage of how left right up down you want your object to be. However, that can be incovenient when programming because it doesn't really mean much. Whereas, being able to define how many "pixels"/fragments wide a shape is might be better.
@@ -138,7 +138,7 @@ You can use [this desmos graph](https://www.desmos.com/calculator/rgbom4dfqw) I 
 </span>
 </div><br>
 
-[:point_left: Go back to Chapter 2](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/README.md)<br>
+[:point_left: Go back to Section 2.1](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals)<br>
 [:point_left: Go back to home](https://github.com/williamchenjun/CS-OpenTK)
 
 ### Reference
