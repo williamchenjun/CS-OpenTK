@@ -74,6 +74,8 @@ Let's go through all the new lines:
   - Thus, we defined a variable that will accept input from outside the shader code scope, and it will be a 2D vector that will be our viewport size.
 - The `float nx = aPosition.x / ViewportDims.x * 2.0f - 1.0f` is the formula we specified earlier, and the same thing for `ny`.
 
+**Warning**: Remember that `1f` is not a valid input. Floats are defined either as `1.0f`, `1.0` or using a `float` constructor (e.g. `as_float = float(x)` where `x` is some integer).
+
 This is all the code needed to make the coordinate transformation. However, we now need to find a way to pass the viewport size to the shader. We do that in the shader code `Shader.cs`. At the bottom of the shader class constructor add the following lines:
 
 ```CS
