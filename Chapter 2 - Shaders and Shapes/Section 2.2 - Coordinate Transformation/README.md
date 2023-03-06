@@ -69,7 +69,7 @@ void main(void){
 ```
 
 Let's go through all the new lines:
-- The `uniform` keyword [^1] is used to specify a parameter in the vertex shader that allows communication between the program and the shader. They remain constant during the rendering process.
+- The `uniform` keyword [^1] is used to specify a parameter in the vertex shader that allows communication between the program and the shader without the use of a buffer or VAO. They remain constant during the rendering process.
   - `vec2` is a 2D vector.
   - Thus, we defined a variable that will accept input from outside the shader code scope, and it will be a 2D vector that will be our viewport size.
 - The `float nx = aPosition.x / ViewportDims.x * 2.0f - 1.0f` is the formula we specified earlier, and the same thing for `ny`.
