@@ -12,3 +12,33 @@ There isn't a lot of programming involved to do this. Instead of writing a funct
   </sub></sup>
 </span>
 </div>
+
+The coordinate conversion is actually pretty simple. Given $(x,y)$ coordinates in the normal plane, we can convert them to NDC in the following way
+
+```math
+\begin{align*}
+(n_x, n_y) : \begin{cases}
+n_x := \dfrac{x}{\text{viewport width}}\cdot 2 - 1\\[1em]
+n_y := \dfrac{y}{\text{viewport height}}\cdot 2 - 1
+\end{cases}
+\end{align*}
+```
+
+A rough explanation is that, dividing x and y respectively by the width and height normalizes them (i.e. puts them in the range 0 to 1). However, the NDC space is from -1 to 1, we double it to extend the range, but we subtract 1 to bring it to the correct side.
+
+**Example**: 
+
+<div align="center">
+<img src="https://user-images.githubusercontent.com/79821802/222995712-260aa506-9a61-4c61-bf70-3ec78d7e9c2a.png" width=400/><br>
+<span>
+  <sup><sub>
+    <b>Figure 2</b>: The viewport here is (400, 400).
+  </sub></sup>
+</span><br>
+<img src="https://user-images.githubusercontent.com/79821802/222995714-909903a9-78c1-43db-85fc-eef6b8520c69.png" width=400/><br>
+<span>
+  <sup><sub>
+    <b>Figure 3</b>: The final transformed coordinate is (-0.5, -0.5).
+  </sub></sup>
+</span>
+</div><br>
