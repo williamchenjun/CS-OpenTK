@@ -115,10 +115,10 @@ My viewport size is `(800, 800)`. So, if we printed out the transformed coordina
 ```CS
 float[] transformed_vertices = new float[]
 {
-      -0.6f,   -0.25f,  0.0f,
-      -0.6f,    0.25f,  0.0f,
-      0.65f,   -0.25f,  0.0f,
-      0.65f,    0.25f,  0.0f
+    -0.6f,   -0.25f,  0.0f,
+    -0.6f,    0.25f,  0.0f,
+    0.65f,   -0.25f,  0.0f,
+    0.65f,    0.25f,  0.0f
 };
 ```
 
