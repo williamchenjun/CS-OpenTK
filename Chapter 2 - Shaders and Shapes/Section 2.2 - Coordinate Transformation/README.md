@@ -43,7 +43,7 @@ A rough explanation is that, dividing x and y respectively by the width and heig
 </span>
 </div><br>
 
-### Chaning the shader code
+### Changing the shader code
 
 In the vertex shader code, we need to instruct the GPU to transform the coordinates so that the fragment shader can render the shape in the correct place.
 
