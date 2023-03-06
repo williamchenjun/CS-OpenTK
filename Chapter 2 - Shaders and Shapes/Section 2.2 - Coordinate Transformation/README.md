@@ -60,7 +60,7 @@ out vec4 vColor;
 
 void main(void){
     float nx = aPosition.x / ViewportDims.x * 2.0f - 1.0f;
-    float ny = aPosition.y / ViewportDims.y * 2.0f - 1.0f;
+    float ny = -aPosition.y / ViewportDims.y * 2.0f + 1.0f;
 
     gl_Position = vec4(nx, ny, 0.0f, 1.0f);
 
@@ -87,7 +87,7 @@ GL.Uniform2(viewport_unif, (float)viewport[2], (float)viewport[3]);
 GL.UseProgram(0);
 ```
 
-- The `GL.GetInteger` method can fetch us any variable relating to the program. In this case, we ask the viewport size information. This will return a 4D array containing the anchor points and the width and height `(x, y, w, h)`. So, in this case, it would return `(0, 0, 400, 400)`. The second argument of the method indicates the output variable (i.e. where the data should be stored).
+- The `GL.GetInteger` method can fetch us any variable relating to the program. In this case, we ask the viewport size information. This will return a 4D array containing the anchor points and the width and height `(x, y, w, h)`. So, in this case, it would return `(0, 0, 800, 800)`. The second argument of the method indicates the output variable (i.e. where the data should be stored).
 - `GL.UseProgram(ProgramHandle)` just indicates that we want to communicate with the shader code.
 - Then, we find the location of the `uniform` variable that we defined in `shader.vert` by using `GL.GetUniformLocation` and specifying the `uniform` variable name.
 - The `GL.Uniform2` method is the way we pass the data to the variable in the shader code. You might notice that there are various `Uniform` methods. That's because you can pass any type of data to the shader, from N-dimensional arrays to matrices and more. `Uniform2` is a 2D vector with float values.
@@ -96,10 +96,10 @@ GL.UseProgram(0);
 That's all! Now, if you compile the code, you probably will not see anything. That's because you need to actually change your rectangle vertices to normal coordinates. For example:
 
 ```CS
-float x = 100f;
-float y = 200f;
-float w = 600f;
-float h = 400f;
+float x = 160f;
+float y = 300f;
+float w = 500f;
+float h = 200f;
 
 float[] vertices = new float[]
 {
@@ -110,14 +110,32 @@ float[] vertices = new float[]
 };
 ```
 
+My viewport size is `(800, 800)`. So, if we printed out the transformed coordinates, it would be
+
+```CS
+float[] transformed_vertices = new float[]
+{
+      -0.6f,   -0.25f,  0.0f,
+      -0.6f,    0.25f,  0.0f,
+      0.65f,   -0.25f,  0.0f,
+      0.65f,    0.25f,  0.0f
+};
+```
+
+(Although the coordinates rotate one step clockwise, but I wrote it how we would write it normally)
+
+You can use [this desmos graph](https://www.desmos.com/calculator/rgbom4dfqw) I created to see how the output would look like. Just change the values of `v, a, b, w, h` where `v : viewport` (add a new viewport variable if your viewport is rectangular), `a : x coordinate`, `b : y coordinate`, `w : width of rectangle`, `h : height of rectangle`.
+
 <div align="center">
-  <img src="https://user-images.githubusercontent.com/79821802/223020898-294e373e-f83e-44cc-a4f1-1723bcd108c7.png" width=400/><br>
+  <img src="https://user-images.githubusercontent.com/79821802/223028430-1d254949-be71-4131-b767-3229fe99c8f8.png" width=400/><br>
   <span>
   <sup><sub>
     <b>Figure 4</b>: Rendered rectangle after coordinate transformation.
   </sub></sup>
 </span>
 </div><br>
+
+
 
 ### Reference
 - [Two-bit Coding](https://www.youtube.com/@two-bitcoding8018)
