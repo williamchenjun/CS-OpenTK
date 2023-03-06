@@ -29,16 +29,16 @@ A rough explanation is that, dividing x and y respectively by the width and heig
 **Example**: 
 
 <div align="center">
-<img src="https://user-images.githubusercontent.com/79821802/222995712-260aa506-9a61-4c61-bf70-3ec78d7e9c2a.png" width=400/><br>
+<img src="https://user-images.githubusercontent.com/79821802/222996306-7793cf3c-06cd-4f7e-b8a3-07ff6519b7ac.png" width=400/><br>
 <span>
   <sup><sub>
-    <b>Figure 2</b>: The viewport here is (400, 400).
+    <b>Figure 2</b>: The viewport here is (160, 160).
   </sub></sup>
 </span><br><br>
-<img src="https://user-images.githubusercontent.com/79821802/222995714-909903a9-78c1-43db-85fc-eef6b8520c69.png" width=400/><br>
+<img src="https://user-images.githubusercontent.com/79821802/222996311-78493690-3991-4e51-a463-b91b8c733f43.png" width=400/><br>
 <span>
   <sup><sub>
-    <b>Figure 3</b>: The final transformed coordinate is (-0.5, -0.5).
+    <b>Figure 3</b>: The final transformed coordinate is (0.25, 0.25).
   </sub></sup>
 </span>
 </div><br>
