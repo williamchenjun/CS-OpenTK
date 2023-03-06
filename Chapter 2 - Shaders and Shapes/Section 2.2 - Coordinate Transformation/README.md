@@ -143,6 +143,7 @@ You can use [this desmos graph](https://www.desmos.com/calculator/rgbom4dfqw) I 
 
 ### Reference
 - [Two-bit Coding](https://www.youtube.com/@two-bitcoding8018)
+- [OpenGL Wiki](https://www.khronos.org/opengl/wiki/)
 
 [^1]: Read more about the `uniform` keyword [here](https://www.khronos.org/opengl/wiki/Uniform_(GLSL)).
 [^2]: Read more about GLSL data types [here](https://www.khronos.org/opengl/wiki/Data_Type_(GLSL)).
