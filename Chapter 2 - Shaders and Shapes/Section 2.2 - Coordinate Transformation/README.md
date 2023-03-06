@@ -34,7 +34,7 @@ A rough explanation is that, dividing x and y respectively by the width and heig
   <sup><sub>
     <b>Figure 2</b>: The viewport here is (400, 400).
   </sub></sup>
-</span><br>
+</span><br><br>
 <img src="https://user-images.githubusercontent.com/79821802/222995714-909903a9-78c1-43db-85fc-eef6b8520c69.png" width=400/><br>
 <span>
   <sup><sub>
