@@ -90,7 +90,7 @@ GL.UseProgram(0);
 - The `GL.GetInteger` method can fetch us any variable relating to the program. In this case, we ask the viewport size information. This will return a 4D array containing the anchor points and the width and height `(x, y, w, h)`. So, in this case, it would return `(0, 0, 400, 400)`. The second argument of the method indicates the output variable (i.e. where the data should be stored).
 - `GL.UseProgram(ProgramHandle)` just indicates that we want to communicate with the shader code.
 - Then, we find the location of the `uniform` variable that we defined in `shader.vert` by using `GL.GetUniformLocation` and specifying the `uniform` variable name.
-- The `GL.Uniform2` method is the way we pass the data to the variable in the shader code.
+- The `GL.Uniform2` method is the way we pass the data to the variable in the shader code. You might notice that there are various `Uniform` methods. That's because you can pass any type of data to the shader, from N-dimensional arrays to matrices and more. `Uniform2` is a 2D vector with float values.
 - Lastly, we unbind the `ProgramHandle`.
 
 That's all! Now, if you compile the code, you probably will not see anything. That's because you need to actually change your rectangle vertices to normal coordinates. For example:
