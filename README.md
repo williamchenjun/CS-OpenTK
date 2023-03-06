@@ -10,5 +10,5 @@ I will be documenting my learning, and I will try to convey my knowledge into si
 - [Chapter 1 - Creating a Window](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%201%20-%20Creating%20a%20Window)
 - [Chapter 2 - Shaders and Shapes](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%202%20-%20Shaders%20and%20Shapes)
   - [Section 2.1 - Index Buffers and Quadrilaterals](https://github.com/williamchenjun/CS-OpenTK/tree/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.1%20-%20Index%20Buffers%20and%20Quadrilaterals)
-  - [Section 2.2 - Transforming Coordinates](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.2%20-%20Coordinate%20Transformation/README.md)
+  - [Section 2.2 - Coordinate Transformation](https://github.com/williamchenjun/CS-OpenTK/blob/main/Chapter%202%20-%20Shaders%20and%20Shapes/Section%202.2%20-%20Coordinate%20Transformation/README.md)
 
